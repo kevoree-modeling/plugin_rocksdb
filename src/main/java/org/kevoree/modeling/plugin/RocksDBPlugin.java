@@ -1,4 +1,4 @@
-package org.kevoree.modeling.drivers.rocksdb;
+package org.kevoree.modeling.plugin;
 
 import org.kevoree.modeling.KCallback;
 import org.kevoree.modeling.KConfig;
@@ -14,7 +14,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Random;
 
-public class RocksDbContentDeliveryDriver implements KContentDeliveryDriver {
+public class RocksDBPlugin implements KContentDeliveryDriver {
 
     private Options options;
 
@@ -26,7 +26,7 @@ public class RocksDbContentDeliveryDriver implements KContentDeliveryDriver {
 
     private final String _storagePath;
 
-    public RocksDbContentDeliveryDriver(String storagePath) throws IOException, RocksDBException {
+    public RocksDBPlugin(String storagePath) throws IOException, RocksDBException {
         this._storagePath = storagePath;
     }
 
